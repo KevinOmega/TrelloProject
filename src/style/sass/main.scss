@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@1,500&family=Open+Sans&family=Signika+Negative:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 10px;
+    overflow: hidden;
+}
+
+.App{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: "hidden";
+    overflow-y: visible;
+}
+
+$blue : #0065ff;
+$black : #091e42;
+$gray : #8993a4;
+$white : #fff;
+$light-white : #e6fcff;
+$pink : #eae6ff;
+
+$sans-serif : "DM Sans", sans-serif;
+$open-sans : "Open Snas", sans-serif;
+$signika : "Signika Negative", sans-serif;
+
+$desktop-screen : 1000px;
+
+h1{
+    font-size: 2.25rem;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.9rem;
+}
+h4{
+    font-size: 1.75rem;
+}
+
+h1,h2,h3,h4{
+    font-family: $open-sans;
+}
+
+p,span,a,div{
+    font-size: 1rem;
+    font-family: $sans-serif;
+}
+
+.App{
+    overflow-y: auto;
+}
+
+@import "./navbar";
+@import "./submenu";
+
+.darker{
+    filter : grayscale(50%)
+}
+
+.section{
+    height: 100vh;
+    background-color: lightblue;
+}

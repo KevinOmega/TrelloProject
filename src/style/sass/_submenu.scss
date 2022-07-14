@@ -1,0 +1,56 @@
+#subMenu{
+    position: absolute;
+    top: $navbar-height;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(100vw);
+    transition: $animation-time linear;
+
+    .submenu-item{
+        width: 90%;
+        border-top: 1px dotted $black;
+        padding: 1rem 0;
+        
+
+        .item-header{
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 0.5rem;
+            span{
+                font-size: 1.2rem;
+            }
+            p{
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+#subMenu.activeSubMenu{
+    transform: translateX(0%);
+}
+
+@media  screen and (min-width : $desktop-screen) {
+    #subMenu{
+        background-color: $white;
+        width: 100vw;
+        display: grid;
+        grid-template-columns: repeat(3,250px);
+        justify-content: space-evenly;
+        row-gap: 2rem;
+        padding: 4rem 0;
+        z-index: 2;
+        transform: translate(0 , -170%);
+        
+        
+        .submenu-item{
+            width: 250px;
+            border: none;
+        }
+    }
+    #subMenu.activeSubMenu{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
