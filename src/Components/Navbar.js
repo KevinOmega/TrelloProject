@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useGlobalContext } from "../context";
 import { links } from "../variables";
-import SubMenu from "./SubMenu";
 
 const Navbar = () => {
   const { NavId, setNavId, openSubMenu, setOpenSubMenu } = useGlobalContext();
@@ -39,7 +38,7 @@ const Navbar = () => {
     if (NavId !== 4 && NavId !== 0) {
       setOpenSubMenu(true);
     }
-  }, [NavId]);
+  }, [NavId, setOpenSubMenu]);
 
   return (
     <nav id="navbar" className={showMenu ? "active-navbar" : undefined}>
