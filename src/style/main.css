@@ -319,7 +319,8 @@ p, span, a, div {
   transition: 0.5s linear;
   z-index: 2;
   overflow-y: auto;
-  height: 90vh;
+  padding-bottom: 1rem;
+  height: 80vh;
 }
 
 #subMenu .submenu-item {
@@ -357,6 +358,7 @@ p, span, a, div {
     padding: 4rem 0;
     z-index: 2;
     transform: translate(0, -170%);
+    height: fit-content;
   }
   #subMenu .submenu-item {
     width: 250px;
@@ -365,6 +367,7 @@ p, span, a, div {
   #subMenu.activeSubMenu {
     opacity: 1;
     transform: translate(0);
+    box-shadow: 10px 0 20px #091e42;
   }
 }
 

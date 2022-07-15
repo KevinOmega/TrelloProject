@@ -1,11 +1,12 @@
 import { IoLogoGameControllerA } from "react-icons/io";
-import { AiFillEye, AiFillStar } from "react-icons/ai";
-import { FaRocket, FaBuilding } from "react-icons/fa";
+import { AiFillEye, AiFillStar, AiFillThunderbolt } from "react-icons/ai";
+import { FaRocket, FaBuilding, FaBlog } from "react-icons/fa";
 import { HiTemplate } from "react-icons/hi";
 import { BiPaperPlane } from "react-icons/bi";
-import { MdSdStorage } from "react-icons/md";
-import { RiTeamFill } from "react-icons/ri";
+import { MdSdStorage, MdDeveloperMode } from "react-icons/md";
+import { RiTeamFill, RiGuideFill, RiRemoteControlFill } from "react-icons/ri";
 import { BsPencilFill, BsLightbulbFill } from "react-icons/bs";
+import { SiWebpack } from "react-icons/si";
 
 const links = [
   {
@@ -92,7 +93,7 @@ const links = [
       },
       {
         id: 112,
-        logo: "",
+        logo: <AiFillThunderbolt />,
         title: "Free plan ",
         info: "For individuals or small teams looking to keep work organized",
       },
@@ -109,31 +110,31 @@ const links = [
     content: [
       {
         id: 113,
-        logo: "",
+        logo: <RiGuideFill />,
         title: "Trello guide",
         info: "Our easy to follow workflow guide will take you from project set-up to Trello expert in no time",
       },
       {
         id: 114,
-        logo: "",
+        logo: <RiRemoteControlFill />,
         title: "Remote work guide",
         info: "The complete guide to settin up your team for remote work success",
       },
       {
         id: 115,
-        logo: "",
+        logo: <FaBlog />,
         title: "Trello blog",
         info: "Explore articles and resources to help guide your Trello experience",
       },
       {
         id: 116,
-        logo: "",
+        logo: <SiWebpack />,
         title: "Webinars",
         info: "Enjoy our free Trello webinars and become a productivity professional",
       },
       {
         id: 117,
-        logo: "",
+        logo: <MdDeveloperMode />,
         title: "Developers",
         info: "The sky's the limit in what you can deliver to Trello users in your Power-Up",
       },
