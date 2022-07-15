@@ -7,6 +7,8 @@
     transform: translateX(100vw);
     transition: $animation-time linear;
     z-index: 2;
+    overflow-y: auto;
+    height: 90vh;
 
     .submenu-item{
         width: 90%;
