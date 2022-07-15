@@ -6,6 +6,7 @@
     align-items: center;
     transform: translateX(100vw);
     transition: $animation-time linear;
+    z-index: 2;
 
     .submenu-item{
         width: 90%;

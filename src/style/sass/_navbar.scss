@@ -1,5 +1,6 @@
 $navbar-height : 5rem;
 $animation-time : 0.5s;
+$margin-navbar : 2rem;
 
 #navbar{
     position: fixed;
@@ -8,6 +9,8 @@ $animation-time : 0.5s;
     display: flex;
     overflow: hidden;
     transition: 0.5s linear;
+    z-index: 2;
+    background-color: $white;
 
     .navbar-wrapper{
         height: $navbar-height;
@@ -19,7 +22,7 @@ $animation-time : 0.5s;
             position: relative;
             display: flex;
             gap: 1rem;
-            margin-left: 1rem;
+            margin-left: $margin-navbar;
             transition: $animation-time linear;
         
             h4 {
@@ -47,7 +50,7 @@ $animation-time : 0.5s;
         .btn{
             width: 2rem;
             height: 2rem;
-            margin-right: 1rem;
+            margin-right: $margin-navbar;
             display: flex;
             align-items: flex-start;
             justify-content: center;
@@ -209,7 +212,6 @@ $animation-time : 0.5s;
 
 #navbar.active-navbar{
     height: 100vh;
-    background-color: $white;
 }
 
 @media screen and (min-width : $desktop-screen) {

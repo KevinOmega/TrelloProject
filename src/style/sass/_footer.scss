@@ -1,0 +1,71 @@
+#footer{
+    width: 100vw;
+    background-color: $black;
+    color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1.5rem 0;
+
+    .center{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        .logo{
+            font-size: 1.5rem;
+            font-weight: bolder;
+            font-family: $signika;
+            background-color: $white;
+            color: $black;
+            padding: 0 0.5rem;
+        }
+
+        .title{
+            font-size: 1.5rem;
+            font-family: $signika;
+        }
+    }
+
+    .social-media{
+        ul{
+            display: flex;
+            gap: 1rem;
+
+            li{
+                list-style: none;
+                span{
+                    display: block;
+                    font-size: 1.3rem;
+                    
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width : $desktop-screen) {
+    #footer{
+        padding: 2rem 0;
+
+        .center{
+            .logo{
+                font-size: 2rem;
+                padding: 0 0.8rem;
+            }
+            .title{
+                font-size: 2rem;
+            }
+        }
+        .social-media{
+            ul{
+                gap: 3rem;
+                li{
+                    span{
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}

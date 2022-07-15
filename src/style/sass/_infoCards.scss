@@ -1,0 +1,69 @@
+#info-cards{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .info-center{
+        width: 90%;
+        border-top: 1px dotted $black;
+        border-bottom: 1px dotted $black;
+        padding: 2.5rem 0;
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+
+        .card{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 1rem;
+
+            .hero{
+                img{
+                    width: 7.5rem;
+                }
+            }
+            .center{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+                gap: 1rem;
+
+                button{
+                    @include small-btn;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width : $desktop-screen) {
+    #info-cards{
+        .info-center{
+            width: 90%;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 2rem;
+            padding: 5rem 0;
+
+            .card{
+                flex-direction: row;
+                align-items: flex-start;
+                .hero{
+                    img{
+                        width: 5rem;
+                    }
+                }
+                .center{
+                    gap: 1rem;
+
+                    p{
+                        line-height: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}
