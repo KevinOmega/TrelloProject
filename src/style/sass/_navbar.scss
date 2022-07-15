@@ -212,6 +212,7 @@ $margin-navbar : 2rem;
 
 #navbar.active-navbar{
     height: 100vh;
+    width: 100vw;
 }
 
 @media screen and (min-width : $desktop-screen) {
