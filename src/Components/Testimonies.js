@@ -40,7 +40,10 @@ const Testimonies = () => {
   const dragCard = (e) => {
     if (isMoving) {
       setCardsPosition((current) => {
-        return (current = current + (initialX - e.clientX) / -40);
+        return (current =
+          current +
+          (initialX - e.clientX) /
+            (cardsRef.current.getBoundingClientRect().width / -100));
       });
     }
   };
