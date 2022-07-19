@@ -859,6 +859,7 @@ p, span, a, div {
   position: relative;
   width: 90%;
   overflow-x: hidden;
+  touch-action: pan-y;
 }
 
 #testimonies .testimonies-center .cards-wrapper .cards {
