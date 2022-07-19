@@ -39,7 +39,6 @@ const Testimonies = () => {
 
   const dragCard = (e) => {
     if (isMoving) {
-      console.log(cardsPosition);
       setCardsPosition((current) => {
         return (current = current + (initialX - e.clientX) / -40);
       });
@@ -87,13 +86,10 @@ const Testimonies = () => {
           <div
             ref={cardsRef}
             className="cards"
-            onMouseDown={handleMouseDown}
-            onTouchStart={handleMouseDown}
-            onMouseUp={handleMouseLeaving}
-            onTouchEnd={handleMouseLeaving}
-            onMouseMove={dragCard}
-            onTouchMove={dragCard}
-            onMouseLeave={handleMouseLeaving}
+            onPointerDown={handleMouseDown}
+            onPointerUp={handleMouseLeaving}
+            onPointerMove={dragCard}
+            onPointerLeave={handleMouseLeaving}
             style={{ transform: `translateX(${cardsPosition}px)` }}
           >
             {testimonies.map((item) => (
