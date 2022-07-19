@@ -6,6 +6,7 @@ import { useGlobalContext } from "./context";
 import Features from "./Components/Features";
 import InfoCards from "./Components/InfoCards";
 import Footer from "./Components/Footer";
+import Testimonies from "./Components/Testimonies";
 
 function App() {
   const { setNavId, setOpenSubMenu, openSubMenu } = useGlobalContext();
@@ -27,6 +28,7 @@ function App() {
         <Team></Team>
         <Features />
         <InfoCards />
+        <Testimonies />
         <Footer />
       </main>
     </div>

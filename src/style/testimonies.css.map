@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,YAAY,CAAA;EACR,QAAQ,EAAE,QAAQ;CACrB",
+    "sources": [
+        "sass/testimonies.scss"
+    ],
+    "names": [],
+    "file": "testimonies.css"
+}

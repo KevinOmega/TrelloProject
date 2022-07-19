@@ -329,4 +329,39 @@ const infoCards = [
   },
 ];
 
-export { links, teams, features, infoCards };
+const testimonies = [
+  {
+    id: 1,
+    name: "Bharath Sundar",
+    area: "Finance, eBay",
+    info: "Everyone loves it; it has democratized our finance function. In some ways Trello shattered hierarchy and brought us together.",
+    industry: "eCommerce",
+    logo: "	https://images.ctfassets.net/rz1oowkt5gyp/6fuM8z1xpeF4hbcwea2bVV/9307ee47c45122c399c33b7536024bd6/ebay.svg",
+  },
+  {
+    id: 2,
+    name: "Kerry Parker-Evans",
+    area: "IT Project Manager",
+    info: "Very simple to use, great automation and keeps me on track with all I need to do. I also like that it can be shared with others.",
+    industry: "Travel",
+    logo: "https://images.ctfassets.net/rz1oowkt5gyp/II3Kz8QYmBOB2hZw2OpWa/019c22804631400fc7ed850908c5829c/egencia.svg",
+  },
+  {
+    id: 3,
+    name: "Haydon Dotson",
+    area: "Sales Manager, Detroit Red Wings",
+    info: "Trello makes it easy to keep everyone on the same page. As changes happen, the real-time updates with email notifications have been key.",
+    industry: "Sport",
+    logo: "https://images.ctfassets.net/rz1oowkt5gyp/7lYMIrJ4C3qzbliMFrounD/42b0bd6e2a60c2685289b2fdb161f208/detroit-red-wings.svg",
+  },
+  {
+    id: 4,
+    name: "Haley Ennes",
+    area: "HR Manager, Sprout Social",
+    info: "Now that we've switched to a remote environment, with the use of Trello, we can now limit the number of meetings we have regarding specific projects and turn to Trello for updates instead.",
+    industry: "Marketing",
+    logo: "https://images.ctfassets.net/rz1oowkt5gyp/7nXolb9JdcJnMUUnrq4HGO/79745cbc1df4920d6596db73d065897a/sprout-social.svg",
+  },
+];
+
+export { links, teams, features, infoCards, testimonies };

@@ -818,6 +818,7 @@ p, span, a, div {
 #footer .social-media ul li span {
   display: block;
   font-size: 1.3rem;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 1000px) {
@@ -836,6 +837,177 @@ p, span, a, div {
   }
   #footer .social-media ul li span {
     font-size: 2rem;
+  }
+}
+
+#testimonies {
+  position: relative;
+}
+
+#testimonies .testimonies-center {
+  position: relative;
+  background-color: #e6fcff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem 0;
+  gap: 1.5rem;
+}
+
+#testimonies .testimonies-center .cards-wrapper {
+  position: relative;
+  width: 90%;
+  overflow-x: hidden;
+}
+
+#testimonies .testimonies-center .cards-wrapper .cards {
+  position: relative;
+  display: flex;
+  transition: 0.05s linear;
+  width: 400%;
+}
+
+#testimonies .testimonies-center .cards-wrapper .cards .testiCard {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem 0;
+  cursor: grab;
+}
+
+#testimonies .testimonies-center .cards-wrapper .cards .testiCard:active {
+  cursor: grabbing;
+}
+
+#testimonies .testimonies-center .cards-wrapper .cards .testiCard .card-center {
+  width: 90%;
+  margin-left: 1rem;
+  user-select: none;
+}
+
+#testimonies .testimonies-center .cards-wrapper .cards .testiCard .card-center span {
+  color: #24a9ff;
+  font-size: 2.5rem;
+}
+
+#testimonies .testimonies-center .cards-wrapper .cards .testiCard .card-center p {
+  font-size: 1.5rem;
+  font-weight: lighter;
+  line-height: 2.25rem;
+}
+
+#testimonies .testimonies-center .cards-wrapper .cards .testiCard .card-footer {
+  user-select: none;
+  width: 90%;
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#testimonies .testimonies-center .cards-wrapper .cards .testiCard .card-footer .customer-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#testimonies .testimonies-center .cards-wrapper .cards .testiCard .card-footer .customer-info h4 {
+  font-size: 1.3rem;
+}
+
+#testimonies .testimonies-center .cards-wrapper .cards .testiCard .card-footer .customer-info h4 span {
+  font-weight: 100;
+}
+
+#testimonies .testimonies-center .cards-wrapper .cards .testiCard .card-footer .industry span {
+  font-weight: bolder;
+}
+
+#testimonies .testimonies-center .cards-wrapper .cards .testiCard .card-footer .logo {
+  margin-top: 1rem;
+}
+
+#testimonies .testimonies-center .cards-wrapper .cards .testiCard .card-footer .logo img {
+  width: 10rem;
+  height: 5rem;
+}
+
+#testimonies .testimonies-center .btns {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#testimonies .testimonies-center .btns .btn-index {
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: #091e42;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+#testimonies .testimonies-center .btns .btn-index.active {
+  width: 4rem;
+  border-radius: 20px;
+  background-color: #0065ff;
+}
+
+#testimonies .testimonies-center .btns .arrows {
+  position: absolute;
+  opacity: 0;
+  display: flex;
+  gap: 1rem;
+  transform: translate(100vw);
+  margin-left: 1rem;
+}
+
+#testimonies .testimonies-center .btns .arrows span {
+  color: #091e42;
+  font-size: 2rem;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.3rem;
+  cursor: pointer;
+  border: 1px dotted #091e42;
+}
+
+#testimonies .testimonies-center .btns .arrows span:hover {
+  color: #0065ff;
+  box-shadow: 0 0 1px #091e42;
+}
+
+#testimonies .testimonies-center .btns .arrows span:active {
+  transform: scale(0.9);
+  box-shadow: 0 0 5px #091e42;
+}
+
+@media screen and (min-width: 1000px) {
+  #testimonies .testimonies-center {
+    flex-direction: column-reverse;
+  }
+  #testimonies .testimonies-center .cards-wrapper .cards .testiCard .card-center span {
+    font-size: 3rem;
+  }
+  #testimonies .testimonies-center .cards-wrapper .cards .testiCard .card-center p {
+    font-size: 1.7rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.1rem;
+  }
+  #testimonies .testimonies-center .btns {
+    align-self: flex-end;
+    margin-right: 3rem;
+  }
+  #testimonies .testimonies-center .btns .arrows {
+    position: relative;
+    transform: translate(0);
+    opacity: 1;
   }
 }
 
