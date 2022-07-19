@@ -88,8 +88,11 @@ const Testimonies = () => {
             ref={cardsRef}
             className="cards"
             onMouseDown={handleMouseDown}
+            onTouchStart={handleMouseDown}
             onMouseUp={handleMouseLeaving}
+            onTouchEnd={handleMouseLeaving}
             onMouseMove={dragCard}
+            onTouchMove={dragCard}
             onMouseLeave={handleMouseLeaving}
             style={{ transform: `translateX(${cardsPosition}px)` }}
           >
