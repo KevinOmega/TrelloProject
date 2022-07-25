@@ -17,9 +17,28 @@ const Testimonies = () => {
     cardsRef.current.style.transition = "linear 0.01s";
   };
 
+  const dragCard = (e) => {
+    if (isMoving) {
+      const diff = (initialX - e.clientX) * -1;
+
+      cardsRef.current.style.transform = `translateX(${
+        cardsPosition + diff
+      }px)`;
+      console.log(cardsRef.current.style.transform);
+    }
+  };
+
   const handleMouseLeaving = () => {
+    setCardsPosition(
+      (current) =>
+        (current = parseInt(cardsRef.current.style.transform.match(/-?[\d]+/)))
+    );
     setIsMoving(false);
     cardsRef.current.style.transition = "linear 0.5s";
+  };
+
+  useEffect(() => {
+    console.log(cardsPosition);
     const p25 = cardsRef.current.getBoundingClientRect().width / -4;
     const p50 = cardsRef.current.getBoundingClientRect().width / -2;
 
@@ -35,18 +54,7 @@ const Testimonies = () => {
     if (cardsPosition < p50 + p25 / 2) {
       setCurrentIndex(4);
     }
-  };
-
-  const dragCard = (e) => {
-    if (isMoving) {
-      setCardsPosition((current) => {
-        return (current =
-          current +
-          (initialX - e.clientX) /
-            (cardsRef.current.getBoundingClientRect().width / -100));
-      });
-    }
-  };
+  }, [cardsPosition]);
 
   useEffect(() => {
     const cardsUnit =
@@ -67,7 +75,7 @@ const Testimonies = () => {
         setCardsPosition(cardsUnit * 3);
         break;
       default:
-        console.log("si");
+        console.log("");
         break;
     }
   }, [currentIndex]);
