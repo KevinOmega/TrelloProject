@@ -24,7 +24,6 @@ const Testimonies = () => {
       cardsRef.current.style.transform = `translateX(${
         cardsPosition + diff
       }px)`;
-      console.log(cardsRef.current.style.transform);
     }
   };
 
@@ -38,7 +37,6 @@ const Testimonies = () => {
   };
 
   useEffect(() => {
-    console.log(cardsPosition);
     const p25 = cardsRef.current.getBoundingClientRect().width / -4;
     const p50 = cardsRef.current.getBoundingClientRect().width / -2;
 
